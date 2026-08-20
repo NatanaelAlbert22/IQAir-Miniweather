@@ -23,7 +23,7 @@ MQTT_PORT = 443
 MQTT_PATH = "/mqtt"
 MQTT_TOPIC_REAL = "/devices/30d45180-45f2-494a-ba49-6550e41b4e2a"
 MQTT_CLIENT_ID = f"real-sender-{os.getpid()}"
-PUBLISH_INTERVAL = 5
+PUBLISH_INTERVAL = 60
 
 def read_latest_data():
     try:

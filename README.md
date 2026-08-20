@@ -52,6 +52,7 @@ Sistem ini terdiri dari dua komponen utama:
                                                            │
                                                            ▼
                                                     MQTT Subscriber
+                                                    MiniWeather
 ```
 
 ## Features
@@ -346,7 +347,7 @@ Program berjalan dengan interval:
 Konfigurasi tersebut ditentukan melalui:
 
 ```python
-PUBLISH_INTERVAL = 5
+PUBLISH_INTERVAL = 60
 ```
 
 ---
@@ -535,7 +536,7 @@ Transform payload
 datafe.json       MQTT Publish
 ```
 
-Pengiriman dilakukan setiap 5 detik.
+Pengiriman dilakukan setiap 60 detik atau 1 menit.
 
 ---
 
@@ -550,7 +551,7 @@ Ketika koneksi berhasil:
 📡 MQTT: /devices/30d45180-45f2-494a-ba49-6550e41b4e2a
 
 ✅ [12:00:00] Terhubung ke broker
-🔄 Loop dimulai (update setiap 5 detik)...
+🔄 Loop dimulai (update setiap 60 detik)...
 
 📤 AQI:45 | PM2.5:20 | Suhu:28°C
 ```
